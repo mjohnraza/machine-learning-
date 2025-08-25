@@ -1,0 +1,78 @@
+import pandas as pd
+
+# Data structured as a list of dictionaries
+student_data = [
+    {'test_score': 45, 'writing_skills': 4, 'reading_skill': 5, 'study_hours_per_week': 2, 'attendance_percentage': 60},
+    {'test_score': 32, 'writing_skills': 2, 'reading_skill': 3, 'study_hours_per_week': 1, 'attendance_percentage': 45},
+    {'test_score': 51, 'writing_skills': 7, 'reading_skill': 6, 'study_hours_per_week': 5, 'attendance_percentage': 70}, 
+    {'test_score': 49, 'writing_skills': 6, 'reading_skill': 5, 'study_hours_per_week': 3, 'attendance_percentage': 95},
+    {'test_score': 25, 'writing_skills': 3, 'reading_skill': 2, 'study_hours_per_week': 0, 'attendance_percentage': 30},
+    {'test_score': 38, 'writing_skills': 5, 'reading_skill': 4, 'study_hours_per_week': 2, 'attendance_percentage': 85},
+    {'test_score': 42, 'writing_skills': 4, 'reading_skill': 6, 'study_hours_per_week': 4, 'attendance_percentage': 75},
+    {'test_score': 15, 'writing_skills': 1, 'reading_skill': 1, 'study_hours_per_week': 0, 'attendance_percentage': 10},
+    {'test_score': 50, 'writing_skills': 8, 'reading_skill': 8, 'study_hours_per_week': 3, 'attendance_percentage': 90},
+    {'test_score': 47, 'writing_skills': 7, 'reading_skill': 7, 'study_hours_per_week': 1, 'attendance_percentage': 100}
+]
+
+
+df = pd.DataFrame(student_data)
+
+print(df)
+
+import pandas as pd
+import numpy as np
+
+# Data as a NumPy array
+data_array = np.array([
+    [45, 4, 5, 2, 60],
+    [32, 2, 3, 1, 45],
+    [51, 7, 6, 5, 70],
+    [49, 6, 5, 3, 95],
+    [25, 3, 2, 0, 30],
+    [38, 5, 4, 2, 85],
+    [42, 4, 6, 4, 75],
+    [15, 1, 1, 0, 10],
+    [50, 8, 8, 3, 90],
+    [47, 7, 7, 1, 100]
+])
+
+# Column names
+columns = ['test_score', 'writing_skills', 'reading_skill', 'study_hours_per_week', 'attendance_percentage']
+
+# Create DataFrame
+df_from_numpy = pd.DataFrame(data=data_array, columns=columns)
+
+
+import pandas as pd
+
+
+data_tuples = [
+    (45, 4, 5, 2, 60),
+    (32, 2, 3, 1, 45),
+    (51, 7, 6, 5, 70),
+    (49, 6, 5, 3, 95),
+    (25, 3, 2, 0, 30),
+    (38, 5, 4, 2, 85),
+    (42, 4, 6, 4, 75),
+    (15, 1, 1, 0, 10),
+    (50, 8, 8, 3, 90),
+    (47, 7, 7, 1, 100)
+]
+
+
+columns = ['test_score', 'writing_skills', 'reading_skill', 'study_hours_per_week', 'attendance_percentage']
+
+
+df_from_tuples = pd.DataFrame.from_records(data_tuples, columns=columns)
+
+
+
+
+
+
+
+
+
+
+
+
